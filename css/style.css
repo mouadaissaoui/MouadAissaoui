@@ -840,7 +840,8 @@ display: none;
     border-radius: 10px;
     padding-bottom: 5px;
     /* width: 390px; */
-    width: -moz-available;
+     width: -webkit-fill-available;
+
 }
 .cart-v1 .flex img {
     display: ruby;
