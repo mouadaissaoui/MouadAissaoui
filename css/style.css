@@ -194,7 +194,7 @@ section .logo  img {
 .about-me .text p {
     margin-top: 170px;
     position: absolute;
-     left: 742px;
+    left: 742px;
     text-align: justify;
     line-height: 1.5  ; 
 }
@@ -696,12 +696,20 @@ margin-bottom: 40px;
     }
     body {
     padding: 0px;
-    padding-left: 50px;
-    padding-right: 50px;
+    overflow: inherit;
+    
     }
     .flex {
         display: flex;
         justify-content: center;
+    }
+
+    .Skills .tech h2 {
+        margin: 40px auto;
+        border-bottom: 4px inset #7562E0;
+        max-width: max-content;
+        /* font-size: 50px; */
+        font-size: 45px;
     }
 
     section {
@@ -791,7 +799,7 @@ display: none;
 
 }
 .about-me .text h2 {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     text-align: center;
 }
 #skil {
@@ -831,11 +839,34 @@ display: none;
 .Counti .cart-v1 img {
     border-radius: 10px;
     padding-bottom: 5px;
-    width: 390px;
+    /* width: 390px; */
+    width: -moz-available;
 }
+.cart-v1 .flex img {
+    display: ruby;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #cdcdce39;
+  }
+.cart-v1 h3 {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .cart-v1 span {
+    font-size: 30px;
+    color: #7562E0;
+    font-weight: 600;
+  }
+
+
+
 .Counti .cart-v1 {
     margin-left: 0px;
-    width: 400px;
+    /* width: 400px; */
+    width: 300px;
 }
 
 .contact-info input {
@@ -869,6 +900,34 @@ display: none;
     font-size: 80px;
 
 }
+.contact-info input {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    /* width: 600px; */
+  }
+  .contact-info textarea {
+    height: 100px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+  .contact-info button {
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5b2390;
+    justify-content: center;
+    text-align: center;
+    transform: scale(1);
+    transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+  }
   }
 
 @media screen and (min-width : 576px) and (max-width :767px) {
@@ -1048,6 +1107,36 @@ display: none;
     position: static;
     right: 100px;
 }
+.Counti {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.Counti .cart-v1 img {
+    border-radius: 10px;
+    padding-bottom: 5px;
+    /* width: 390px; */
+    width: -moz-available;
+}
+.cart-v1 .flex img {
+    display: ruby;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+    margin-top: 10px;
+    background-color: #cdcdce39;
+  }
+.cart-v1 h3 {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .cart-v1 span {
+    font-size: 30px;
+    color: #7562E0;
+    font-weight: 600;
+  }
+
 
 }
 
