@@ -473,6 +473,7 @@ section .logo  img {
 }
 .projects .Counti {
     display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 10px; /* Adjust gap between cards */
   }
   
@@ -1128,7 +1129,7 @@ display: none;
 }
 
 .projects .Counti {
-    display: grid;
+    display: flex;
     gap: 10px; /* Adjust gap between cards */
   }
   
@@ -1437,7 +1438,7 @@ display: none;
     position: relative;
 }
 .projects .Counti {
-    display: grid;
+    display: flex;
     gap: 10px; /* Adjust gap between cards */
   }
   
@@ -1513,9 +1514,31 @@ display: none;
         margin-top: 0;
         position: relative;
     }
-
+    .projects .Counti {
+        display: flex;
+        gap: 10px; /* Adjust gap between cards */
+      }
+      
+      .projects .cart-v1 {
+        border: 1px solid #ddd; /* Optional: For card outline */
+        border-radius: 8px;
+        padding: 10px;
+        background-color: #fff; /* Optional: Card background */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        transform-style: preserve-3d; /* Enables 3D transformations */
+      }
+      .projects .cart-v1:hover {
+        transform: rotateX(10deg) rotateY(-10deg) scale(1.05); /* 3D tilt and zoom */
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* More intense shadow on hover */
+      }
+    
+      .projects .Counti {
+        perspective: 1000px; /* Adjust to control 3D depth */
+      }
     
 }
+
 
 
   
